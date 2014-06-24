@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -9,16 +10,14 @@ namespace SourceCombiner
 {
     static class ExtensionMethods
     {
+        /// <summary>
+        /// Gets the Item collection as a string array
+        /// </summary>
+        /// <param name="view"></param>
         public static string[] GetStrings(this ListBox view)
         {
-            var strs = new List<string>();
-
-            foreach (string item in view.Items)
-                strs.Add(item);
-
-            return strs.ToArray();
+            return view.Items.Cast<string>().ToArray();
         }
-
 
         /// <summary>
         /// Shows the message of an Exception using a Message Dialog
