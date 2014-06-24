@@ -11,7 +11,7 @@ namespace SourceCombiner
     static class ExtensionMethods
     {
         /// <summary>
-        /// Gets the Item collection as a string array
+        /// Gets the Items collection as a string array
         /// </summary>
         /// <param name="view"></param>
         public static string[] GetStrings(this ListBox view)
