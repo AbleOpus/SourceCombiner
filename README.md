@@ -1,4 +1,4 @@
-#SourceCombiner (Command line parameters)
+# SourceCombiner (Command line parameters)
 
 Note: Arguments can be ordered however one pleases and arguments are 
 not case sensitive.
